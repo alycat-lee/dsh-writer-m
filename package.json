@@ -1,0 +1,41 @@
+{
+  "name": "dsh-writer-m",
+  "version": "0.1.0",
+  "description": "dsh-writer-m — DeepSeek Harness 分步写作插件：小说 / 公众号 / 小红书，分步流程 + 每步可改 prompt + 套结构模版 + 可配置落盘目录。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "templates/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "writing",
+    "novel",
+    "xiaohongshu",
+    "wechat",
+    "template"
+  ]
+}

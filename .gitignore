@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# 构建产物（lib/client.js 由 src-client/ 拼接生成）
+# 说明：client.js 需要随包发布，所以不忽略；这里只忽略临时文件
+
+# 本地运行数据（落盘根目录、Obsidian 镜像、发布登录态）
+*.log
+.DS_Store
+Thumbs.db
+
+# 搜狗输入法误写目录（历史垃圾）
+%SystemDrive%/
+
+# 测试残留
+_persist_test.txt
+_test_ctx.mjs

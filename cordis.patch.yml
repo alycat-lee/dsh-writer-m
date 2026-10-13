@@ -1,0 +1,8 @@
+# dsh-writer-m bundle patch layer.
+# `dsh plugin add` 安装时作为一层应用：把插件行插进 profile 的组合配置。
+# 插件提供：左侧写作按钮 + 全屏写作工作台，分步写作（书名/大纲/人物/卷大纲/
+# 章节大纲/正文/润色/去AI化），每步 prompt 可见可改，支持套结构模版模仿写作，
+# 产物落盘到可配置目录。
+- insert:
+    - id: dsh-writer-m
+      name: 'dsh-writer-m'
